@@ -17,6 +17,7 @@ public class Line {
 		//Deklarerer to Point objekter
 		Point p1 = new Point(3,2);
 		Point p2 = new Point(8,9);
+		//kode
 		
 		//Deklarerer et Line objekt
 		Line linje = new Line (p1,p2);
