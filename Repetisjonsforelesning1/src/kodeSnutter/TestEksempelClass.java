@@ -1,7 +1,6 @@
-package ferdigOeving;
+package kodeSnutter;
 
 
-import ferdigOeving.*;
 
 
 public class TestEksempelClass {
@@ -16,7 +15,7 @@ public class TestEksempelClass {
 		
 		if(test.getTekstAttributt().equals(test2.getTekstAttributt())){
 			
-			System.err.println("Shit's similar y0");
+			System.err.println("Like elementer");
 		}; 
 		
 		System.out.println(test.toString());

@@ -1,4 +1,4 @@
-package ferdigOeving;
+package kodeSnutter;
 
 public class EksempelClass {
 	// attributter

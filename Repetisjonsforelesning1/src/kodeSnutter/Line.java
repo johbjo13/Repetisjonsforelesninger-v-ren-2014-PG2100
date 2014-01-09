@@ -1,7 +1,7 @@
 package kodeSnutter;
 
 import java.awt.Point;
-import java.io.ObjectInputStream.GetField;
+
 
 public class Line {
 		
@@ -17,11 +17,12 @@ public class Line {
 		//Deklarerer to Point objekter
 		Point p1 = new Point(3,2);
 		Point p2 = new Point(8,9);
-		//kode
+		
 		
 		//Deklarerer et Line objekt
 		Line linje = new Line (p1,p2);
 		
+		//Viser get og tostring metodene til objektene
 		System.out.println("p1 sine koordinater " + p1.toString());
 		System.out.println("p2 sine koordinater " + p2.getLocation());
 		System.out.println("p2 sin X = "+p2.getX());
@@ -31,14 +32,20 @@ public class Line {
 		
 		
 		
+		//Bruker Point sit setLocation metode
 		p2.setLocation(7, 10);
 		
+		//Oppdaterte points.
 		System.out.println("p2 sine nye koordinater " + p2.toString());
 		
 		System.out.println("Linje sine koordinater" + linje.toString());
 		
 		System.out.println("Veksttallet er " + linje.getSlope());
 		
+		
+		//Tilleggs funksjon - Hent ut lengden til linja
+		
+		System.out.println("Lengden på linja er: "+linje.getLineLength());
 		
 		
 	}
@@ -57,6 +64,7 @@ public class Line {
 		p2.setLocation(x2, y2);
 		
 	}
+	
 
 	public Point getP1() {
 		return p1;
@@ -73,7 +81,7 @@ public class Line {
 		// Kaster exception hvis det ikke er helling.
 		if (p1.getX() == p2.getX() || p2.getY() == p1.getY()){
 			
-			throw new IllegalArgumentException("Slope undefined");
+			throw new IllegalArgumentException("Slope undefined"); // aka stigningstall
 		}
 		else{
 			// stigningsgrad
@@ -81,6 +89,14 @@ public class Line {
 			slope = yCoord/xCoord;
 		}
 		return slope;
+	}
+	
+	private double lineLength;
+	public double getLineLength(){
+		//punkt.distanse(punkt2) arves fra Point2D
+		lineLength = p1.distance(p2);
+		
+		return lineLength;
 	}
 
 	public String toString() {
