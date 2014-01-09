@@ -24,7 +24,7 @@ public class LineInklSlope {
 
 	public double getSlope(){
 		// Beregner lengden til katetene
-		double xCoord = p2.getX()-p1.getX();
+		double xCoord = p2.getX()-p1.getX(); // 8-4
 		double yCoord = p2.getY()-p1.getY();
 		
 		// Kaster exception hvis det ikke er helling.

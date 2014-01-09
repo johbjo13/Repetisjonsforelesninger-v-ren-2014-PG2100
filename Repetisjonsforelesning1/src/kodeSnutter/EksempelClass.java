@@ -10,7 +10,7 @@ public class EksempelClass {
 	// Konstruktør 1
 	public EksempelClass(String tekstAttributt, int tallAttributt,
 			double desimaltallAttributt, boolean trueFalseAttrubitt) {
-		super();
+		
 		this.tekstAttributt = tekstAttributt;
 		this.tallAttributt = tallAttributt;
 		this.desimaltallAttributt = desimaltallAttributt;

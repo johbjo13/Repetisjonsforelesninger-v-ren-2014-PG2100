@@ -98,6 +98,7 @@ public class Line {
 	}
 	
 	private double lineLength;
+	
 	public double getLineLength(){
 		//punkt.distanse(punkt2) arves fra Point2D
 		lineLength = p1.distance(p2);
