@@ -8,7 +8,7 @@ public class Line {
 	private static Point p1;
 	private static Point p2;
 	//Hardkodet variabel for å vise Point sin isvertical
-	private int x;
+	private int x,y;
 	
 	private double slope;
 	
@@ -48,11 +48,17 @@ public class Line {
 		System.out.println("Lengden på linja er: "+linje.getLineLength());
 		
 		
+		
+		
 	}
-	//sjekker om innsendt point sin X er lik pointet den sammenligner med. Hører hjemme i klassen Point
+	//sjekker om innsendt point sin X/Y er lik pointet den sammenligner med. Hører hjemme i klassen Point
 	public boolean isVertical(Point p){
 		
 		return x == p.x;
+	}
+	public boolean isHorizontal(Point p){
+		
+		return y == p.y;
 	}
 	
 	public Line(Point p1, Point p2) {
@@ -79,7 +85,7 @@ public class Line {
 		double xCoord = p2.getX()-p1.getX();
 		double yCoord = p2.getY()-p1.getY();
 		// Kaster exception hvis det ikke er helling.
-		if (p1.getX() == p2.getX() || p2.getY() == p1.getY()){
+		if (p1.getX() == p2.getX()){
 			
 			throw new IllegalArgumentException("Slope undefined"); // aka stigningstall
 		}
@@ -101,6 +107,18 @@ public class Line {
 
 	public String toString() {
 		return "Line [" + p1 + ", " + p2 + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		
+		return true;
 	}
 
 

@@ -28,12 +28,12 @@ public class LineInklSlope {
 		double yCoord = p2.getY()-p1.getY();
 		
 		// Kaster exception hvis det ikke er helling.
-		if (p1.getX() == p2.getX() || p2.getY() == p1.getY()){
+		if (p1.getX() == p2.getX()){
 			
 			throw new IllegalArgumentException("Slope undefined");
 		}
 		else{
-			// Pytagoras setning
+			// Stigningstallet er 
 		
 			slope = yCoord/xCoord;
 		}
