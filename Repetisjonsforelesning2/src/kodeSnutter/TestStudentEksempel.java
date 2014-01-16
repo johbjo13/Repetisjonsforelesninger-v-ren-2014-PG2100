@@ -27,7 +27,7 @@ public class TestStudentEksempel {
 			if(student != null){
 				
 				// Legger inn et skikkelig navn på 'Asdfsen'
-				if(student.getFamilyName().equalsIgnoreCase("Asdfsen")){
+				if(student.getFamilyName().equalsIgnoreCase("Geirsen")){
 					 student.setFamilyName("Arnesen");
 					 student.setFirstName("Arne");
 					 student.setCredits(student.getCredits() -10);

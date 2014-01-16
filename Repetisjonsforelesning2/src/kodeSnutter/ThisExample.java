@@ -4,9 +4,9 @@ public class ThisExample {
 	 int testVariable;  
 	
 	 public void testMethod(int testVariable) {  
+		 	this.testVariable = testVariable;
 		 	
-		 	
-	        System.out.println("Value of testVariable : " + testVariable);  
+	        System.out.println("Value of testVariable : " + this.testVariable);  
 	        
 	        // fikser vi slik at vi referer til riktig objekt ser output annerledes ut.
 	        

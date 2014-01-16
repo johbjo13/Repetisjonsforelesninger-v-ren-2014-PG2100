@@ -22,7 +22,7 @@ public class Date {
     	java.util.Date dato = new java.util.Date();
     	int valueAdjust = 1900;
     	
-    	this.dayNumber = dato.getDate();
+    		this.dayNumber = dato.getDate();
         this.monthNumber = dato.getMonth();
         this.year = dato.getYear() + valueAdjust;
 
