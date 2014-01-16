@@ -1,5 +1,7 @@
 package oeving2;
 
+import java.util.Calendar;
+
 public class Date {
     private int dayNumber;
     private int monthNumber;
@@ -9,7 +11,7 @@ public class Date {
         
     	
     	this.dayNumber = dayNumber;
-        this.monthNumber = monthNumber-1;
+        this.monthNumber = monthNumber-1; // justering siden Date returnerer 0-11
         this.year = year;
         
         
@@ -61,7 +63,7 @@ public class Date {
             if (dayNumber == 32) {
             	dayNumber = 1;
             	monthNumber++;
-            	//Hvis måned overstiger 11 mnd, sett mnd til 0 og legg til et år
+            	//Hvis mï¿½ned overstiger 11 mnd, sett mnd til 0 og legg til et ï¿½r
                 if (monthNumber == 12) {
                 	monthNumber = 0;
                     year++;
@@ -69,7 +71,7 @@ public class Date {
             }
         }
         
-        // Håndterer februar
+        // Hï¿½ndterer februar
         else
          if (monthNumber == 1) {
             if (dayNumber == 29) {

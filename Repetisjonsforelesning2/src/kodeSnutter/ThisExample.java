@@ -10,7 +10,7 @@ public class ThisExample {
 	        
 	        // fikser vi slik at vi referer til riktig objekt ser output annerledes ut.
 	        
-	       //   System.out.println("Correct value of testVariable : " + this.testVariable);
+	       
 	    }  
 	
 

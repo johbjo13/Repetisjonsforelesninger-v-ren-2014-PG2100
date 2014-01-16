@@ -4,13 +4,12 @@ package oeving2;
 public class DateProgram {
 	public static void main(String[] args) {
 		// Startdato
-		
-		
+	
 		// Henter ut dagens dato
 		Date date = new Date();
 		System.out.println(date.toString());
 		
-		// Kaller på metoden nextDay i Date.
+		// Kaller pï¿½ metoden nextDay i Date.
 		date.nextDay();
 		System.out.println(date.toString());
 		date.nextDay();

@@ -16,7 +16,9 @@ public class TestStudentEksempel {
 		StudentEksempel student5 = new StudentEksempel("403","Navn", "Navnesen", 1);
 		StudentEksempel student6 = new StudentEksempel("404","Denduvet", "Hysj", 231);
 		// Legger studentene inn i array
-		studenter = new StudentEksempel[] { student1, student2, student3, student4, student5, student6};
+		studenter = new StudentEksempel[] { student1, student2, student3, 
+				student4, student5, student6};
+		
 		
 		
 		// For hvert student element i arrayen studenters
